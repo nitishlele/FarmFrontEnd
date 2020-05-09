@@ -1,0 +1,50 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      
+      <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Home</button>
+        <button mat-menu-item>Register</button>
+        <button mat-menu-item>Farmer</button>
+        <button mat-menu-item>Retailer</button>
+        <button mat-menu-item>User</button>
+        <button mat-menu-item>Search</button>
+        <button mat-menu-item>Help</button>
+      </mat-menu>
+    
+      <!--<button mat-icon-button>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
+      <h1>Menu</h1>
+      <span class="menu-spacer"></span>-->
+      <div>
+        <a mat-button [routerLink]="'#'"> Company </a>
+        <a mat-button [routerLink]="'#'"> Register </a>
+       <!-- <a mat-button [routerLink]="'#'">    </a> -->
+        <a mat-button [routerLink]="'#'"> View Product </a>
+        <a mat-button [routerLink]="'#'"> View Response</a>
+        <a mat-button [routerLink]="'#'"> Request</a>
+        <a mat-button [routerLink]="'#'"> Search</a>
+        <a mat-button><form class="form-inline waves-light" mdbWavesEffect >
+          <div class="md-form mt-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          </div>
+        </form></a>
+  
+      </div>
+    </mat-toolbar-row>
+    </mat-toolbar>
+  <div class="bg"><h1 style="text-align: center;">Farmer</h1></div>
+  <div class="header">
+    <h1 style="text-align: center;">Farmer</h1>
+  </div>
+  
+  
+  <footer class="footer">
+    <div class="container">
+        <span>All Rights Reserved 2019 @JavaGuides</span>
+        <h3>Powered by:abc.xyz private limited</h3>
+        <h4>Email:abc.xyz@yahoo.com</h4>
+        <h4>Helpline no. :+91-9876543221</h4>
+    </div>
+  </footer>

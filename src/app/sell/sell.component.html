@@ -1,0 +1,31 @@
+<body>
+    <div class="container">
+      <div class="example-loading-shade"
+           *ngIf="isLoadingResults">
+        <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+      </div>
+    
+      <div class="sellform">
+        <h2>Product</h2>
+    <!-- 
+      <div class="button-row">
+        <a mat-flat-button color="primary" [routerLink]="['/products']"><mat-icon>list</mat-icon></a>
+      </div> -->
+     
+      <form>
+          <label>Product Name</label>
+            <input type="text" placeholder="Product Name" [(ngModel)]="name" required name="prodname">
+          
+          <label>Enter Starting Price</label>
+            <input type="text" placeholder="Start Range" [(ngModel)]="startRange" name="startrange">
+         
+            <label>Enter Ending Price</label>
+            <input type="text" placeholder="End Range" [(ngModel)]="endRange" name="endrange">
+          
+            <button type="button"  (click)="onFormSubmit()" mat-flat-button color="primary"><a routerlink="/products"><mat-icon>Save</mat-icon></a></button>
+          
+        </form>
+        </div>
+        </div>
+        </body>
+    

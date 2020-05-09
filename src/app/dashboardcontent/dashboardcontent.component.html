@@ -1,0 +1,62 @@
+<div class="main">
+    <div class="content">
+      <div class="overview">
+        <h4>Overview</h4>
+      </div>
+    <!--
+    <div *ngIf="info.token; else loggedOut">
+        <h5 class="text-primary">Your Information</h5>
+        <table>
+        <p>
+          <strong>Username:</strong> {{info.username}}<br/>
+          <strong>Roles:</strong> {{info.authorities}}<br />
+          <strong>Token:</strong> {{info.token}}.
+        </p>
+        <button class="btn btn-secondary" (click)="logout()">Logout</button>
+        </table>
+      </div>
+       
+      <ng-template #loggedOut>
+        Please login.
+      </ng-template>
+    
+      <span>WELCOME <h1>{{info.username}}</h1> </span>-->
+          
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Products</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+         <h3> Total Products:</h3><h2>Total products : {{getRowsValue()}} </h2><br>
+         <a href="/products"><h2>View more</h2></a>
+      </mat-card-content>
+    </mat-card>
+    
+    <mat-card class="example-card" style="background-color: skyblue;">
+      <mat-card-header>
+        <mat-card-title>Requests</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+         <h3> Total Requests:</h3><h2> 100</h2><br>
+         <a href="/request"><h2>View more</h2></a>
+      </mat-card-content>
+    </mat-card>
+    
+    <mat-card class="example-card" style="background-color: purple;">
+      <mat-card-header>
+        <mat-card-title>Response</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+         <h3> Total Response:</h3><h2> 100</h2><br>
+         <a href="/response"><h2>View more</h2></a>
+      </mat-card-content>
+    </mat-card>
+    </div>
+    <div class="content">
+    <div class="overview">
+      <h3>Daily Activity</h3>
+    </div>
+    </div>
+    </div>
+    
+    

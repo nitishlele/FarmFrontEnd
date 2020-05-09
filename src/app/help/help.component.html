@@ -1,0 +1,79 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="header">
+      <i class="fa fa-coffee"></i>
+      <h2 class="logo">Food Traceability System</h2>
+
+      <ul class="menu">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/services">How it works?</a>
+        <a routerLink="/login">Login</a>
+        <a routerLink="/help">Help</a>
+        <a routerLink="/logout">Logout</a>
+      </ul>
+    </div>
+
+    </div>
+
+<div class="help">  
+  <form >
+    <h2>Contact Us:</h2>
+      <label for="Applicant">Select type: </label>
+      <select id="Applicant" name="Applicant">
+        <option value="user">user</option>
+        <option value="company">Company</option>
+        <option value="farmer">Farmer</option>
+      </select>
+
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="firstname" placeholder=" please enter your name..">
+
+    <label for="lname"> Subjet :</label>
+    <input type="text" id="lname" name="lastname" placeholder="  please insert subject for support">
+
+    <label for="subject"> Description</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
+    <footer class="footer-distributed">
+  
+        <div class="footer-left">
+  
+          <h3><span>Food Traceability System</span></h3>
+  
+          <p class="footer-links">
+          <a routerlink="/home">Home</a>
+          ·
+          <a routerlink="/home">Search</a>
+          ·
+          <a routerLink="/service">About</a>
+          ·
+          <a routerLink="/help">Faq</a>
+          ·
+          <a routerLink="/help">Contact</a>
+          </p>
+  
+          <p class="footer-company-name">FoodTraceabilitySystem © 2020</p>
+  
+          <div class="footer-icons">
+  
+            <a routerLink="#"><i class="fa fa-facebook"></i></a>
+            <a routerLink="#"><i class="fa fa-twitter"></i></a>
+            <a routerLink="#"><i class="fa fa-linkedin"></i></a>
+            <a routerLink="#"><i class="fa fa-github"></i></a>
+  
+          </div>
+  
+        </div>
+  
+      </footer>
+
+    </body>

@@ -1,0 +1,125 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <div class="container">
+    <div class="header">
+      <i class="fa fa-coffee"></i>
+      <h2 class="logo">Food Traceability System</h2>
+
+      <ul class="menu">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/service">How it works?</a>
+        <a routerLink="/login">Login</a>
+        <a routerLink="/help">Help</a>
+        <a routerLink="/login">Logout</a>
+      </ul>
+    </div>
+    <h1>Traceability – What's It All About?</h1>
+   </div>
+
+    <div class="card">
+        <h2>Food Traceability System</h2>
+<p>
+    We are what we eat. Awareness of the food quality, origin and traceability have never been so high. Consumers are interested to know where the food they eat was grown, how it was produced and who is the farmer who grew it. More and more consumers want to go to a farm, see how a farmer is producing food and even buy directly at farmer gates. The era of food traceability and transparency is here.
+</p> 
+<p>
+    Traceability is the ability to follow the movement of food through specified stages of production, processing and distribution. The traceability or product tracking tool should be able to identify at any specified stage of the food chain (from production to distribution) from where the food came and to where the food went, as appropriate to the objectives of the food inspection and certification system.
+</p>   
+<p>
+    It plays a significant role in helping businesses be competitive in the domestic and global market place. The ability to trace a product through all stages of production on farm, processing, distribution, transport and retail to the end point, or consumer, is becoming a standard business practice for all involved in today's food supply chain.
+</p>
+
+<p>
+    Marketing Co-Ops do the crop marketing, buy commodities from farmers, package them and often deliver to end consumers under the joint brand. This is the base point when we speak about traceability and food origin when it comes to farmer co-ops.
+</p>
+<p>
+    Adopting traceability is not a choice. It’s a question of how do we do this in the best way possible, and how do we take advantage of the opportunities that are emerging.
+</p>
+<br>
+<br>
+<div class="service">
+<h2>Farmers</h2>
+<p>
+    Each farmer gets his farm management account on the platform where all farming data can be tracked. Cooperative gets a top-level advisory account where there is a farmer registry, farmer contract management, messaging with farmers and reporting module. As farmers are entering the data, co-op gets real-time traceability reports in an automated and structured way. Also, after harvesting, farmers can create a public traceability report that is accessible to consumers via a QR code that can be placed on the product
+</p>
+<pre>Steps:
+1. Register as a Farmer
+2. Relogin
+3. Activities like Add products, view products added by farmer, Requests received, Responses, etc.
+4. Make a deal at your choice.
+</pre>
+<p>
+    <button class="button"><a [routerLink]="['/register','farmer']" >
+        Register as Farmer
+      </a></button></p>
+</div>
+<div class="service">
+<h2>Retailers</h2>
+
+<p>
+    Farmer cooperatives play a huge role in US economy and are the enabler of the agricultural industry whose role is to protect farmer interests in acquiring inputs at lower prices, providing agronomy advice to farmers and helping farmers to market their products and sell them at better prices. All in all, the key role of farmer co-ops is to help farmers improve their farm profitability and ensure long-term sustainability.
+</p>
+<pre>Steps:
+1. Register as a Retailer
+2. Relogin
+3. Activities like Search products, view products added by farmer, Requests received, Responses, etc.
+4. Make a deal at your choice.
+</pre><p>
+<button class="button"><a [routerLink]="['/register','company']" [queryParams]="{roles: Company}">
+    Register as Retailer
+  </a> </button></p>
+</div>
+<div class="service">
+<h2>Users</h2>
+
+<p>
+    The moment of providing traceability information to a consumer is a very precious moment. At that point, we have all attention of a consumer-focused on this information and making a great impression by showcasing the real farmer story, what was the effort to grow those apples or pears, from which field do the apples come from, how do farming activities look like (photo gallery), which inputs were used for production and much more.
+</p>
+<pre>Steps:
+1. Register as a Users
+2. Relogin
+3. Search for the product that you are curious about bu entering it's code.
+</pre>
+<p><button class="button"><a [routerLink]="['/register','users']" [queryParams]="{roles: User}">
+    Register as User
+  </a></button></p>
+</div>
+</div>
+
+
+<footer class="footer-distributed">
+  
+    <div class="footer-left">
+
+      <h3><span>Food Traceability System</span></h3>
+
+      <p class="footer-links">
+      <a routerLink="/home">Home</a>
+      ·
+      <a routerLink="/home">Search</a>
+      ·
+      <a routerLink="/service">About</a>
+      ·
+      <a routerLink="/help">Faq</a>
+      ·
+      <a routerLink="/help">Contact</a>
+      </p>
+
+      <p class="footer-company-name">FoodTraceabilitySystem © 2020</p>
+
+      <div class="footer-icons">
+
+        <a routerLink="#"><i class="fa fa-facebook"></i></a>
+        <a routerLink="#"><i class="fa fa-twitter"></i></a>
+        <a routerLink="#"><i class="fa fa-linkedin"></i></a>
+        <a routerLink="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>

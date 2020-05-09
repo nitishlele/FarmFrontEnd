@@ -1,0 +1,52 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+ <div class="side"> 
+<div class="sidenav">
+  <h3 style="padding-bottom: 45px; font-size:30px; font-weight: bolder; padding-left: 8%;">Company</h3>
+  <a routerLink="/compproducts" target="main">Products</a>
+  <a routerLink="/request" target="main">Requsets</a>
+  <a routerLink="/response" target="main">Response</a>
+  <a routerLink="/product-details" target="main">Product Deals</a>
+  <a routerLink="/help">Help</a>
+</div>
+</div>
+
+<div class="top">
+  <div class="header">
+    <i class="fa fa-coffee"></i>
+
+    <h2 class="logo">Welcome {{info.username}} </h2>
+
+    <ul class="menu">
+
+      <form style="float: left; margin-right: 20px; margin-bottom: 20px;">
+        <input style="background-color: rgba(0,0,0,0.8); border: none;border-radius: 20px; height: 40px; width: 250px; color: white; font-weight: bold; font-size: 20px; padding-left: 10px;" type="text" placeholder="Search here.." name="search">
+        <a href="#"><i class="fa fa-search"></i></a>
+      </form>
+      <i class="fa fa-home"><a routerLink="/home">Home</a></i>
+      
+      <i class="fa fa-user-circle-o"><a routerLink="/profile">Profile</a></i>
+
+      <i class="fa fa-power-off"> <a routerLink="/home">Logout</a></i>
+     
+    </ul>
+  </div>
+  </div>
+
+
+<div class="maincontent">
+  <iframe src="/dashboardcontent" name="main" allowfullscreen></iframe>
+</div>
+
+
+
+<!-- <div class="dashboardcontent">
+  <app-dashboardcontent></app-dashboardcontent>
+</div> -->
+
+
+  </body>

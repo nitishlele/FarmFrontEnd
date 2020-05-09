@@ -1,0 +1,130 @@
+          <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          </head>
+          <body>
+            
+          
+            <div class="content">
+              <div class="header">
+                <i class="fa fa-coffee"></i>
+                <h2 class="logo">Food Traceability System</h2>
+          
+                <ul class="menu">
+                  <a href="/home">Home</a>
+                  <a href="/services">How it works?</a>
+                  <a href="/login">Login</a>
+                  <a href="/help">Help</a>
+                  <a href="/logout">Logout</a>
+                </ul>
+              </div>
+
+          <div class="regform">
+
+          <h1>Register</h1>
+
+          <div *ngIf="isSignedUp; else signupForm">
+            Your registration is successful. Please <a href="/login">login here!</a>
+          </div>
+          
+          <ng-template #signupForm>
+            <div class="row col-sm-6" style="max-width:700px;">
+              <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                <div class="form-group">
+                  <label for="name">Your name</label>
+                  <input type="text" class="form-control" name="name" [(ngModel)]="form.name" #name="ngModel" required />
+                  <div *ngIf="f.submitted && name.invalid">
+                    <div *ngIf="name.errors.required">Name is required</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" name="username" [(ngModel)]="form.username" #username="ngModel"
+                    required />
+                  <div *ngIf="f.submitted && username.invalid">
+                    <div *ngIf="username.errors.required">Username is required</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" class="form-control" name="email" [(ngModel)]="form.email" #email="ngModel" required email />
+                  <div *ngIf="f.submitted && email.invalid">
+                    <div *ngIf="email.errors.required">Email is required</div>
+                    <div *ngIf="email.errors.email">Email must be a valid email address</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="password" [(ngModel)]="form.password" #password="ngModel"
+                    required minlength="6" />
+                  <div *ngIf="f.submitted && password.invalid">
+                    <div *ngIf="password.errors.required">Password is required</div>
+                    <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <input type="text" class="form-control" name="address" [(ngModel)]="form.address" #address="ngModel"
+                    required />
+                  <div *ngIf="f.submitted && address.invalid">
+                    <div *ngIf="address.errors.required">Address is required</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="registrationNumber">Registration Number</label>
+                  <input type="text" class="form-control" name="registrationNumber" [(ngModel)]="form.registrationNumber" #registrationNumber="ngModel"
+                    required />
+                  <div *ngIf="f.submitted && registrationNumber.invalid">
+                    <div *ngIf="registrationNumber.errors.required">Registration Number is required</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-primary">Register</button>
+                  <div *ngIf="f.submitted && isSignUpFailed" class="alert alert-warning">
+                    Signup failed!<br/>{{errorMessage}}
+                  </div>
+                </div>
+
+                <div class="container">
+                  <span >If you have already registered then <a href="/login">login here</a></span>
+                </div>
+
+              </form>
+            </div>
+          </ng-template>
+          </div>
+  </div>
+    
+          <footer class="footer-distributed">
+      
+            <div class="footer-left">
+          
+              <h3><span>Food Traceability System</span></h3>
+          
+              <p class="footer-links">
+                <a href="/home">Home</a>
+                ·
+                <a href="/home">Search</a>
+                ·
+                <a href="/service">About</a>
+                ·
+                <a href="/help">Faq</a>
+                ·
+                <a href="/help">Contact</a>
+              </p>
+          
+              <p class="footer-company-name">FoodTraceabilitySystem © 2020</p>
+          
+              <div class="footer-icons">
+          
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+          
+              </div>
+            </div>
+        </footer>
+    </body> 

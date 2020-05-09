@@ -1,0 +1,150 @@
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <div class="container">
+    <div class="header">
+      <i class="fa fa-coffee"></i>
+      <h2 class="logo">Food Traceability System</h2>
+
+      <ul class="menu">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/service">How it works?</a>
+        <a routerLink="/login">Login</a>
+        <a routerLink="/help">Help</a>
+        <a routerLink="/login">Logout</a>
+      </ul>
+    </div>
+    <div class="find">
+      <form>
+        <h1>Find Everything here...</h1>
+        <div class="form-box">
+          <input type="text" class="search" placeholder="Search here..." style="font-size: 20px;">
+          <button class="search-btn" type="button">Search</button>
+        </div>
+      </form>
+    </div>
+    </div>
+<!-- 
+    <div class="contents">
+     <mat-tab-group mat-stretch-tabs class="tab-group" dynamicHeight>
+      <mat-tab label="Farmer" dynamicHeight> 
+        <a [routerLink]="['/register','farmer']" >
+          link to Farmer component
+        </a>
+      </mat-tab>
+      <mat-tab class="tabs" label="Retailer"> 
+        <a [routerLink]="['/register','company']" [queryParams]="{roles: Company}">
+          link to Retailer component
+        </a>   
+      </mat-tab>
+      <mat-tab class="tabs" label="Users"> 
+        <a [routerLink]="['/register','users']" [queryParams]="{roles: User}">
+          link to User component
+        </a>
+      </mat-tab>
+    </mat-tab-group>
+  </div> -->
+ 
+
+    <div class="contents">
+    <div class="serheader"><h2>Our Services</h2></div>
+    <table>
+      <tr>
+      <td>
+          <div class="card">
+            <div class="servicecontainer">
+              <img src="../../assets/Farm1.jpg">
+              <h2>Farmer</h2>
+              
+              <p class="title">Root of Food tracesbility system</p>
+              <p>Traceability is a valuable business tool for farmers, due to the ability to trace a product through all stages of production and distribution.Farmer cooperatives play a huge role in US economy and are the enabler of the agricultural industry whose role is to protect farmer interests in acquiring inputs at lower prices, providing agronomy advice to farmers and helping farmers to market their products and sell them at better prices. All in all, the key role of farmer co-ops is to help farmers improve their farm profitability and ensure long-term sustainability.</p>
+              <p>Activities: Add product, Requests, Response ,etc</p>
+              <p><a routerLink='/Services'>Know more...</a></p>
+              <p><button class="button"><a [routerLink]="['/dashboard']">Go to Farmer</a></button>
+              <button class="button"><a [routerLink]="['/register','farmer']" >
+                  Register as Farmer
+                </a></button></p>
+            </div>
+          </div>
+      </td></tr>
+      <tr><td>    
+    <div class="card">
+      <div class="servicecontainer">
+        <img src="../../assets/walmart.jpg">
+        <h2>Retailer</h2>
+      
+        <p class="title">Mediator between Farmer and User</p>
+        <p>Marketing Co-Ops do the crop marketing, buy commodities from farmers, package them and often deliver to end consumers under the joint brand. This is the base point when we speak about traceability and food origin when it comes to farmer co-ops. Let's see the customer journey and experience when buying and consuming the products.
+        </p>
+        <p>Activities: View Products, Requests, Response ,etc</p>
+        <p><a routerLink='/Services'>Know more...</a></p>
+        <p><button class="button"><a [routerLink]="['/compdashboard']">Go to Retailers</a></button>
+          <button class="button"><a [routerLink]="['/register','company']" [queryParams]="{roles: Company}">
+            Register as Retailer
+          </a> </button></p>
+      </div>
+    </div>
+  
+      </td></tr>
+      <tr><td>
+          <div class="card">
+            
+            <div class="servicecontainer">
+              <img src="../../assets/pexels-photo-373639.jpeg">
+              <h2>Users</h2>
+              
+              <p class="title">End Consumer-Last point of food traceability system</p>
+              <p>Search about any product</p><br>
+              <p>The moment of providing traceability information to a consumer is a very precious moment. At that point, we have all attention of a consumer-focused on this information and making a great impression by showcasing the real farmer story, what was the effort to grow those apples or pears, from which field do the apples come from, how do farming activities look like (photo gallery), which inputs were used for production and much more.
+              </p>
+              <p><a routerLink='/Services'>Know more...</a></p>
+              <p><button class="button"><a [routerLink]="['/userpage']">Go to Users</a></button>
+                <button class="button"><a [routerLink]="['/register','users']" [queryParams]="{roles: User}">
+                  Register as User
+                </a></button></p>
+            </div>
+          </div>
+        
+      </td></tr>
+    </table>
+</div> 
+
+    
+     
+
+  <footer class="footer-distributed">
+  
+        <div class="footer-left">
+  
+          <h3><span>Food Traceability System</span></h3>
+  
+          <p class="footer-links">
+          <a routerLink="/home">Home</a>
+          ·
+          <a routerLink="/home">Search</a>
+          ·
+          <a routerLink="/service">About</a>
+          ·
+          <a routerLink="/help">Faq</a>
+          ·
+          <a routerLink="/help">Contact</a>
+          </p>
+  
+          <p class="footer-company-name">FoodTraceabilitySystem © 2020</p>
+  
+          <div class="footer-icons">
+  
+            <a routerLink="#"><i class="fa fa-facebook"></i></a>
+            <a routerLink="#"><i class="fa fa-twitter"></i></a>
+            <a routerLink="#"><i class="fa fa-linkedin"></i></a>
+            <a routerLink="#"><i class="fa fa-github"></i></a>
+  
+          </div>
+  
+        </div>
+  
+      </footer>
+
+  </body>

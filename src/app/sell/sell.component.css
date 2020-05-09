@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat" , sans-serif;
+  }
+  
+  body{
+    background-image: url(../../assets/custom-european-style-leisure-coffee-shop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+  }
+  
+  .sellform{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width :50%;
+    margin-left: 40px;
+    height :auto;
+    background :#000;
+    opacity: 0.9;
+    color: #fff;
+    box-sizing : border-box;
+    padding: 50px 30px;
+  }
+  
+  .sellform h2{
+    margin-bottom: 20px;
+    position: relative;
+    left: 40%;
+    font-size: 30px;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 15px; /* Some padding */ 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  .sellform button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    position: relative;
+    width: 100%;
+    border: none;
+    margin-top: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .sellform button a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  .sellform button:hover {
+    background-color:green;
+  }
+  
+  .sellform button a:hover{
+    font-weight: bolder;
+  }

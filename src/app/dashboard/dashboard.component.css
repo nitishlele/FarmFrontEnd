@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat" , sans-serif;
+  }
+
+  body{
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),url(../../assets/photo-1554118811-1e0d58224f24.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }   
+  
+/*sidebar*/
+
+/* The sidebar menu */
+
+.sidenav {
+    
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 220px; /* Set the width of the sidebar */
+    position: fixed;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden; 
+    padding-top: 20px;
+    color: white;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 15px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: blue;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: underline;
+
+  }
+  
+  .top{
+    height: auto;
+    
+    position: fixed;
+    left: 220px;
+    width: 88%;
+  }
+  
+  .header{
+    height: 80px;
+    position: relative;
+    padding: 0 25px;
+    color: white;
+    overflow: hidden;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .header i{
+    float: left;
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+  
+  .logo{
+    line-height: 100px;
+    float: left ;
+    position: relative;
+    left: 30px;
+  }
+  
+  .menu{
+    float: right;
+    line-height: 100px; 
+  }
+  
+  .menu a,i{
+    color:white;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: 0.4s;
+    font-weight: bold;
+  }
+  
+  .menu a:hover{
+    color:blue   ;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  
+  .main {
+    margin-left:1px; /* Same as the width of the sidebar */
+    padding-right: 50px;
+    padding-top: 20px;
+    display: inline-block;
+  }
+
+  /* Style page content */
+
+  .dashboardcontent{
+    position: relative;
+  }
+
+  .maincontent{
+    position: fixed;
+    top: 80px;
+    left: 220px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .maincontent iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:85.5%;
+    height:100%;
+  }

@@ -1,0 +1,38 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="example-loading-shade"
+       *ngIf="isLoadingResults">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+  </div>
+  
+  <div class="prodform">
+    <div class="header">
+      <a [routerLink]="['/products']"><i class="fa fa-bars"></i></a>
+    </div>
+    <h2>Product
+      {{info.details["id"]}}
+    </h2>
+    <form #form="ngForm">
+
+
+      <label>Product Name</label>
+           <input matInput placeholder="Product Name" [(ngModel)]="prod_name" required name="prodname">
+     
+      <label>Product Description</label>
+        <input matInput placeholder="Product Desc" [(ngModel)]="prod_desc" name="proddesc">
+     
+      <label>Product Price</label>
+        <input matInput placeholder="Product Price" [(ngModel)]="prod_price" name="prodprice"
+               [errorStateMatcher]="matcher">
+     
+      <div class="button-row">
+        <button type="button"  (click)="onFormSubmit()" ><mat-icon>Save</mat-icon></button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
